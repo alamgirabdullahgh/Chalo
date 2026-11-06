@@ -30,7 +30,7 @@ object UpdState {
 
 /** GitHub-এর নতুন রিলিজ ধরে এবং অ্যাপের ভেতর থেকেই ইনস্টল করে — বারবার ডাউনলোড করতে হয় না। */
 object Updater {
-    const val REPO = "raqialamgirabdullah-rgb/Chalo"
+    const val REPO = "alamgirabdullahgh/Chalo"
     private const val APK = "RickshawRide.apk"
     private val main = Handler(Looper.getMainLooper())
 

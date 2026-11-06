@@ -16,7 +16,7 @@ data class Place(val name: String, val pt: Pt)
  * নিয়ম: নিজস্ব User-Agent লাগে, সেকেন্ডে একটার বেশি অনুরোধ নয় (তাই খুঁজুন বাটন/এন্টারে খোঁজা হয়, প্রতি অক্ষরে নয়)।
  */
 object Places {
-    private const val UA = "Chalo/1.0 (https://github.com/raqialamgirabdullah-rgb/Chalo)"
+    private const val UA = "Chalo/1.0 (https://github.com/alamgirabdullahgh/Chalo)"
     private const val BASE = "https://nominatim.openstreetmap.org"
 
     private fun get(url: String): String {
