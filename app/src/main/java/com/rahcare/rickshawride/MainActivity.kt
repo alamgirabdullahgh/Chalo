@@ -46,6 +46,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onResume() {
         super.onResume()
+        AutoUpdate.fg = true; AutoUpdate.schedule(this)
         // "Allow from this source" দিয়ে ফিরলে আপডেট নিজেই শুরু হয়
         val pu = UpdState.pendingUrl
         if (pu != null && packageManager.canRequestPackageInstalls()) {
@@ -59,6 +60,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onPause() {
         super.onPause()
+        AutoUpdate.fg = false; AutoUpdate.kick(this, 60_000L)
         handler.removeCallbacks(checker)
     }
 }
